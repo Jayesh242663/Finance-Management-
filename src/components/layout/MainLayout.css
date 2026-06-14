@@ -1,0 +1,155 @@
+/* ========================================
+   Main Layout - Modern Glassmorphism Style
+   ======================================== */
+
+/* ========================================
+   Layout Container
+   ======================================== */
+.main-layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Demo running marquee banner */
+.demo-running-banner {
+  height: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background: linear-gradient(90deg, #f59e0b, #d97706);
+  color: #000000;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 2.5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.marquee-content {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-content span {
+  padding-right: 4rem;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.main-layout {
+  flex: 1;
+  background: #111111;
+  display: flex;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  min-height: 0;
+  height: 100%;
+}
+
+/* ========================================
+   Content Area
+   ======================================== */
+.main-layout-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ========================================
+   Main Content
+   ======================================== */
+.main-layout-main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile First - Small Screens (< 640px) */
+@media (max-width: 639px) {
+  .main-layout-main {
+    padding: 0.75rem;
+    height: calc(100vh - 100px);
+  }
+}
+
+/* Tablet Screens (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .main-layout-main {
+    padding: 1rem;
+    height: calc(100vh - 100px);
+  }
+}
+
+/* Desktop Screens (1024px and up) */
+@media (min-width: 1024px) {
+  .main-layout-main {
+    padding: 1.5rem;
+    height: calc(100vh - 100px);
+  }
+}
+
+/* ========================================
+   Scrollbar Styles
+   ======================================== */
+.main-layout-main::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.main-layout-main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-layout-main::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.main-layout-main::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   Animation Utilities
+   ======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
