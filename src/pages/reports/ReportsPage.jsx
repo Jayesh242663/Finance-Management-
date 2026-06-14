@@ -161,7 +161,7 @@ const ReportsPage = () => {
 
         // Calculate expenses debits for the day
         const dayExpenses = (expenses || []).filter(
-          (exp) => exp.date === dayKey && exp.transaction_type === 'debit'
+          (exp) => exp.date === dayKey && (exp.transactionType || exp.transaction_type) === 'debit'
         );
         const expensesDebit = dayExpenses.reduce((sum, exp) => sum + (exp.amount || 0), 0);
 
@@ -209,7 +209,7 @@ const ReportsPage = () => {
         const batchId = batchObj ? batchObj.id : null;
         
         const batchExpenses = (expenses || []).filter(
-          (exp) => exp.transaction_type === 'debit' && exp.batch_id === batchId
+          (exp) => (exp.transactionType || exp.transaction_type) === 'debit' && (exp.batchId || exp.batch_id) === batchId
         );
         const expensesDebit = batchExpenses.reduce((sum, exp) => sum + (exp.amount || 0), 0);
         
@@ -252,7 +252,7 @@ const ReportsPage = () => {
 
       // Calculate expenses debits for the month
       const monthExpenses = (expenses || []).filter(
-        (exp) => exp.date && exp.date.startsWith(monthKey) && exp.transaction_type === 'debit'
+        (exp) => exp.date && exp.date.startsWith(monthKey) && (exp.transactionType || exp.transaction_type) === 'debit'
       );
       const expensesDebit = monthExpenses.reduce((sum, exp) => sum + (exp.amount || 0), 0);
 
