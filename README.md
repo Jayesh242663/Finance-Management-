@@ -1,4 +1,4 @@
-# 📊 Finance & Student Management System
+#  Finance & Student Management System
 
 A premium, modern client-side administration dashboard designed for managing educational institutions, student fee receipts, accounts ledger, operational expenses, and financial analytics. 
 
@@ -6,15 +6,15 @@ Featuring a sleek, dark-themed **glassmorphism user interface**, this applicatio
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-* **📈 Dashboard & Financial Analytics**: Real-time stats on total fees, collections, pending fees, and losses. Contains interactive Area Charts for revenue trends, Pie Charts for fee collection status, and horizontal Bar Charts for course distributions.
-* **👥 Student Directory**: View student records, enrollment status (Active, Graduated, On Leave, Dropped Out), batch assignments, admission dates, and complete individual payment history.
-* **💳 Fee Receipting & Payment Logging**: Log payments through Cash, UPI, Credit/Debit Card, Bank Transfer, or Cheque. Generates vector-accurate PDF receipts with custom terms, institution details, and automated digital signatures.
-* **🧾 Ledger & Audit Log**: A comprehensive double-entry chronological log of all transactions (receipts, placements, expense debits, adjustments) matching a physical ledger book theme.
-* **💸 Expenses & Cash Withdrawals**: Log school expenditures, track cash-in-hand accounts, and verify bank balances across multiple accounts.
-* **🏷️ Fully White-labeled**: Dynamically configured via global constants. No hardcoded names or branding details.
-* **⚠️ Running Demo Banner**: Includes a constant running top marquee banner indicating the application's mock demonstration state.
+* ** Dashboard & Financial Analytics**: Real-time stats on total fees, collections, pending fees, and losses. Contains interactive Area Charts for revenue trends, Pie Charts for fee collection status, and horizontal Bar Charts for course distributions.
+* ** Student Directory**: View student records, enrollment status (Active, Graduated, On Leave, Dropped Out), batch assignments, admission dates, and complete individual payment history.
+* ** Fee Receipting & Payment Logging**: Log payments through Cash, UPI, Credit/Debit Card, Bank Transfer, or Cheque. Generates vector-accurate PDF receipts with custom terms, institution details, and automated digital signatures.
+* ** Ledger & Audit Log**: A comprehensive double-entry chronological log of all transactions (receipts, placements, expense debits, adjustments) matching a physical ledger book theme.
+* ** Expenses & Cash Withdrawals**: Log school expenditures, track cash-in-hand accounts, and verify bank balances across multiple accounts.
+* ** Fully White-labeled**: Dynamically configured via global constants. No hardcoded names or branding details.
+* ** Running Demo Banner**: Includes a constant running top marquee banner indicating the application's mock demonstration state.
 
 ---
 
@@ -30,7 +30,7 @@ Featuring a sleek, dark-themed **glassmorphism user interface**, this applicatio
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ npm run preview
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 ├── public/                # Static assets (favicons, logos)
